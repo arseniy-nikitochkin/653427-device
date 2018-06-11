@@ -12,7 +12,10 @@
 
     <div class="site-controls">
       <div class="search">
-        <!--<input class="search-input" type="text" placeholder="Поиск по сайту" name="search-input">-->
+        <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
+          <input class="search-input" type="search" placeholder="Поиск по сайту" name="search">
+          <button class="search-submit" type="submit">Найти</button>
+        </form>
       </div>
 
       <div class="user-controls">
@@ -150,13 +153,13 @@
 
       <ul class="top-slider-controls">
         <li>
-          <button class="top-slider-button">Первый слайд</button>
+          <button class="top-slider-button" type="button">Первый слайд</button>
         </li>
         <li>
-          <button class="top-slider-button">Второй слайд</button>
+          <button class="top-slider-button" type="button">Второй слайд</button>
         </li>
         <li>
-          <button class="top-slider-button">Третий слайд</button>
+          <button class="top-slider-button" type="button">Третий слайд</button>
         </li>
       </ul>
     </section>
@@ -339,15 +342,32 @@
     </div>
   </footer>
 
-  <section class="modal modal-contact-us">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <!--form-->
-    <button class="modal-close">Закрыть</button>
+
+    <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+      <div class="feedback-half-column">
+        <label for="feedback-name">Ваше имя:</label>
+        <input type="text" id="feedback-name" placeholder="Имя Фамилия" name="name">
+      </div>
+      <div class="feedback-half-column">
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="email" id="feedback-email" placeholder="email@example.com" name="email">
+      </div>
+      <div class="feedback-full-column">
+        <label for="feedback-message">Текст письма:</label>
+        <textarea name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close">Закрыть</button>
+    <img src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
