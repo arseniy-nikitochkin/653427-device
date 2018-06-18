@@ -426,6 +426,10 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.pagination {
+  background-color: #ebebeb;
+}
+
 .pagination a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -434,6 +438,15 @@ a {
   color: #000000;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.pagination > a:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination > a:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item {
