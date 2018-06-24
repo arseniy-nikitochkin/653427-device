@@ -222,6 +222,7 @@ a {
 
 .button {
   display: inline-block;
+  vertical-align: baseline;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -457,6 +458,7 @@ a {
 
 .services-item label:active {
   color: #f7e184;
+
   background-color: #000000;
 }
 
@@ -661,9 +663,10 @@ a {
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  background-color: #ffffff;
   color: #464646;
+
   border: 3px solid #f0c52e;
+  background-color: #ffffff;
 }
 
 .feedback-form input::placeholder,
@@ -792,7 +795,7 @@ a {
 
 .catalog {
   width: 760px;
-  margin-top: 69px;
+  margin-top: 50px;
   margin-left: 72px;
 }
 
@@ -866,14 +869,16 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 
   list-style: none;
 }
 
 .catalog-item {
-  min-height: 500px;
+  min-height: 465px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .catalog-item-title-row {
@@ -889,6 +894,7 @@ a {
 
 .catalog-item-title-row a {
   display: inline-block;
+  vertical-align: baseline;
   width: 250px;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -922,7 +928,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 74px;
+  margin-bottom: 77px;
 
   background-color: #ebebeb;
 }
@@ -942,12 +948,13 @@ a {
 }
 
 .pagination > a:active {
-  background-color: #d9d9d9;
   color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d9d9d9;
 }
 
 .pagination-button {
-  padding: 25px 30px;
+  padding: 23px 30px;
   width: 135px;
   box-sizing: border-box;
 }
