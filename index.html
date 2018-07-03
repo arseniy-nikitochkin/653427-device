@@ -97,7 +97,7 @@
         <h2 class="visually-hidden">Топ товаров</h2>
 
         <ol>
-          <li class="top-slide">
+          <li class="top-slide top-slide-active">
             <div class="top-slide-left-column">
               <img width="384" height="486" src="img/slider-1.png" alt="8-метровая селфи-палка">
             </div>
@@ -259,26 +259,26 @@
       <ul class="brands-list">
         <li class="brands-item">
           <a href="#">
-            <img src="img/logo-1-dark.jpg" alt="DJI">
-            <img src="img/logo-1.jpg" alt="DJI">
+            <img width="260" height="100" src="img/logo-1-dark.jpg" alt="DJI">
+            <img width="260" height="100" src="img/logo-1.jpg" alt="DJI">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/logo-2-dark.jpg" alt="SP Gadgets">
-            <img src="img/logo-2.jpg" alt="SP Gadgets">
+            <img width="260" height="100" src="img/logo-2-dark.jpg" alt="SP Gadgets">
+            <img width="260" height="100" src="img/logo-2.jpg" alt="SP Gadgets">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/logo-3-dark.jpg" alt="GoPro">
-            <img src="img/logo-3.jpg" alt="GoPro">
+            <img width="260" height="100" src="img/logo-3-dark.jpg" alt="GoPro">
+            <img width="260" height="100" src="img/logo-3.jpg" alt="GoPro">
           </a>
         </li>
         <li class="brands-item">
           <a href="#">
-            <img src="img/logo-4-dark.jpg" alt="HTC Vive">
-            <img src="img/logo-4.jpg" alt="HTC Vive">
+            <img width="260" height="100" src="img/logo-4-dark.jpg" alt="HTC Vive">
+            <img width="260" height="100" src="img/logo-4.jpg" alt="HTC Vive">
           </a>
         </li>
       </ul>
@@ -309,7 +309,7 @@
         <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
         <a href="#">
-          <img src="img/map.jpg" alt="Как до нас добраться">
+          <img width="560" height="222" src="img/map.jpg" alt="Как до нас добраться">
         </a>
 
         <a class="button button-wide" href="#">Напишите нам</a>
@@ -378,7 +378,7 @@
           </li>
         </ul>
         <div class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" /></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img width="27" height="34" src="img/logo-html.svg" /></a>
         </div>
       </div>
     </div>
@@ -388,19 +388,21 @@
     <h2 class="visually-hidden">Напишите нам</h2>
 
     <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
-      <div class="feedback-half-column">
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" id="feedback-name" placeholder="Имя Фамилия" name="name">
-      </div>
-      <div class="feedback-half-column">
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input type="email" id="feedback-email" placeholder="email@example.com" name="email">
+      <div class="feedback-user-info">
+        <div class="feedback-half-column">
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" id="feedback-name" placeholder="Имя Фамилия" name="name">
+        </div>
+        <div class="feedback-half-column">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" id="feedback-email" placeholder="email@example.com" name="email">
+        </div>
       </div>
       <div class="feedback-full-column">
         <label for="feedback-message">Текст письма:</label>
         <textarea name="message" id="feedback-message" placeholder="В свободной форме"></textarea>
       </div>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button submit-button" type="submit">Отправить</button>
     </form>
 
     <button class="modal-close" type="button">Закрыть</button>
@@ -408,7 +410,7 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+    <img width="960" height="559" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15">
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
