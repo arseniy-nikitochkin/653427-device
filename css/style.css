@@ -1492,7 +1492,7 @@ img {
   background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox+ label:hover::before {
   opacity: 0.6;
 }
 
@@ -1533,7 +1533,7 @@ img {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
-.filter-input-radio:hover + label::before {
+.filter-input-radio + label:hover::before {
   opacity: 0.6;
 }
 
@@ -1543,6 +1543,14 @@ img {
 
 .filter-input-radio:active + label::before {
   background: url("../img/radio-on.svg") no-repeat;
+}
+
+.filter-input-radio:disabled + label {
+  color: #a6a6a6;
+}
+
+.filter-input-radio:disabled + label::before {
+  opacity: 0.25;
 }
 
 .catalog {
@@ -1844,12 +1852,14 @@ img {
   display: none;
   box-sizing: border-box;
   width: 960px;
-  height: 553px;
-  margin-top: -276px;
-  margin-left: -480px;
+  min-height: 553px;
+  max-height: 90%;
   padding: 93px 100px;
+  overflow-y: scroll;
 
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+
+  transform: translate(-50%, -50%);
 }
 
 .modal-close {
@@ -1984,6 +1994,44 @@ img {
   display: none;
   width: 960px;
   height: 559px;
-  margin-top: -280px;
-  margin-left: -480px;
+
+  transform: translate(-50%, -50%);
 }
+
+.modal-show {
+  display: block;
+  animation: modal-popup 1s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-49%, -50%);
+  }
+}
+
+@keyframes modal-popup {
+ from { transform: translate(-50%, 200%) }
+ 50% { transform: translate(-50%,-60%) }
+ to { transform: translate(-50%,-50%) }
+}
+

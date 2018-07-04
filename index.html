@@ -308,11 +308,11 @@
         <h3 class="info-header">Контакты</h3>
         <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <a href="#">
+        <a class="map-popup" href="#">
           <img width="560" height="222" src="img/map.jpg" alt="Как до нас добраться">
         </a>
 
-        <a class="button button-wide" href="#">Напишите нам</a>
+        <a class="button button-wide button-write-us" href="#">Напишите нам</a>
       </section>
     </section>
 
@@ -391,7 +391,7 @@
       <div class="feedback-user-info">
         <div class="feedback-half-column">
           <label for="feedback-name">Ваше имя:</label>
-          <input type="text" id="feedback-name" placeholder="Имя Фамилия" name="name">
+          <input type="text" id="feedback-name" placeholder="Имя Фамилия" name="username">
         </div>
         <div class="feedback-half-column">
           <label for="feedback-email">Ваш e-mail:</label>
@@ -410,8 +410,9 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img width="960" height="559" src="img/map-big.jpg" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4255.5319157610975!2d37.52807171137713!3d55.6874755677002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530658142928" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
