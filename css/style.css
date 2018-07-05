@@ -280,9 +280,13 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 222px;
   margin: 0;
   padding: 0;
+}
+
+.login-controls-item .logout {
+  padding-left: 0;
+  margin-left: 19px;
 }
 
 .user-profile {
@@ -1123,7 +1127,7 @@ img {
 }
 
 .main-footer-logo {
-  margin-right: auto;
+  flex-grow: 1;
 }
 
 .main-footer-logo a {
@@ -1179,7 +1183,6 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 223px;
   margin: 0;
   padding: 0;
 }
@@ -1749,6 +1752,7 @@ img {
 .catalog-sort::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   z-index: -1;
 
