@@ -48,6 +48,8 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  -ms-scroll-limit-x-max: 0;
 }
 
 a {
@@ -171,9 +173,7 @@ img {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
 }
 
@@ -485,6 +485,8 @@ img {
 
 .submit-button {
   min-width: 200px;
+
+  background-color: transparent;
 }
 
 .button-wide {
@@ -680,9 +682,7 @@ img {
   right: 84px;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -791,19 +791,19 @@ img {
 }
 
 .popular-cameras a::after {
-  background: url(../img/popular-3.svg) 55% 52% no-repeat;
+  background: url("../img/popular-3.svg") 55% 52% no-repeat;
 }
 
 .popular-fitness a::after {
-  background: url(../img/popular-4.svg) 53% 53% no-repeat;
+  background: url("../img/popular-4.svg") 53% 53% no-repeat;
 }
 
 .popular-watch a::after {
-  background: url(../img/popular-5.svg) 53% 52% no-repeat;
+  background: url("../img/popular-5.svg") 53% 52% no-repeat;
 }
 
 .popular-drone a::after {
-  background: url(../img/popular-6.svg) 48% 54% no-repeat;
+  background: url("../img/popular-6.svg") 48% 54% no-repeat;
 }
 
 .popular-item:hover a::before {
@@ -1007,9 +1007,7 @@ img {
   opacity: 0.2;
 
   -webkit-transition: opacity 0.2s ease-in;
-
   -o-transition: opacity 0.2s ease-in;
-
   transition: opacity 0.2s ease-in;
 }
 
@@ -1070,7 +1068,7 @@ img {
 
 .info-text {
   margin-bottom: 29px;
-  width: 510px;
+  width: 478px;
 }
 
 .info-delivery-list {
@@ -1738,9 +1736,7 @@ img {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2076,13 +2072,10 @@ img {
   overflow-y: scroll;
 
   -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 
   -webkit-transform: translate(-50%, -50%);
-
   -ms-transform: translate(-50%, -50%);
-
   transform: translate(-50%, -50%);
 }
 
@@ -2241,7 +2234,6 @@ img {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
 }
 
@@ -2266,9 +2258,7 @@ img {
   height: 559px;
 
   -webkit-transform: translate(-50%, -50%);
-
   -ms-transform: translate(-50%, -50%);
-
   transform: translate(-50%, -50%);
 }
 
