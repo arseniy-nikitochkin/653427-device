@@ -1358,6 +1358,7 @@ img {
 
 .footer-copyright:active {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .footer-copyright a{
