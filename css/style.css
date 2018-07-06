@@ -811,9 +811,8 @@ img {
   opacity: 1;
 }
 
-.popular-item:active a::after {
+.popular-item a:active::after {
   opacity: 0.3;
-  pointer-events: none;
 }
 
 .services {
@@ -1358,12 +1357,30 @@ img {
 
 .footer-copyright:active {
   opacity: 0.3;
-  pointer-events: none;
 }
 
 .footer-copyright a{
+  position: relative;
+
   display: block;
   padding-top: 3px;
+}
+
+.footer-copyright img {
+  pointer-events: none;
+}
+
+.footer-copyright a:active img {
+  opacity: 0.3;
+}
+
+.footer-copyright a::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .logo-yellow a {
