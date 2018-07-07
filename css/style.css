@@ -679,7 +679,7 @@ img {
 
 .top-slider-controls {
   position: absolute;
-  top: 200px;
+  bottom: 268px;
   right: 84px;
 
   display: -webkit-box;
@@ -994,6 +994,8 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -1359,7 +1361,7 @@ img {
   opacity: 0.3;
 }
 
-.footer-copyright a{
+.footer-copyright a {
   position: relative;
 
   display: block;
@@ -1374,7 +1376,7 @@ img {
   opacity: 0.3;
 }
 
-.footer-copyright a::after{
+.footer-copyright a::after {
   position: absolute;
   content: '';
   top: 0;
@@ -1680,7 +1682,7 @@ img {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-input-checkbox+ label:hover::before {
+.filter-input-checkbox + label:hover::before {
   opacity: 0.6;
 }
 
@@ -2036,8 +2038,7 @@ img {
 }
 
 .pagination-button {
-  padding: 23px 30px;
-  width: 135px;
+  padding: 23px 26px 23px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2048,13 +2049,13 @@ img {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 88px;
   margin: 0;
   padding: 0;
 }
 
 .pagination-item {
+  margin: 0 7px 0 21px;
+
   list-style: none;
 }
 
@@ -2089,7 +2090,6 @@ img {
   min-height: 553px;
   max-height: 90%;
   padding: 93px 100px;
-  overflow-y: scroll;
 
   -webkit-box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
@@ -2267,6 +2267,8 @@ img {
   height: 156px;
   padding: 15px 20px;
   margin-bottom: 41px;
+
+  resize: none;
 }
 
 .modal-map {
@@ -2348,13 +2350,31 @@ img {
 }
 
 @-webkit-keyframes modal-popup {
-  from { -webkit-transform: translate(-50%, 200%); transform: translate(-50%, 200%) }
-  50% { -webkit-transform: translate(-50%,-60%); transform: translate(-50%,-60%) }
-  to { -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%) }
+  from {
+    -webkit-transform: translate(-50%, 200%);
+    transform: translate(-50%, 200%)
+  }
+  50% {
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%)
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+  }
 }
 
 @keyframes modal-popup {
-  from { -webkit-transform: translate(-50%, 200%); transform: translate(-50%, 200%) }
-  50% { -webkit-transform: translate(-50%,-60%); transform: translate(-50%,-60%) }
-  to { -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%) }
+  from {
+    -webkit-transform: translate(-50%, 200%);
+    transform: translate(-50%, 200%)
+  }
+  50% {
+    -webkit-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%)
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+  }
 }
