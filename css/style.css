@@ -750,6 +750,8 @@ img {
 }
 
 .popular-item a {
+  display: block;
+
   color: #000000;
   letter-spacing: 0.2px;
 }
